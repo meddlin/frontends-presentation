@@ -12,7 +12,10 @@ import {
   Quote,
   Slide,
   Text,
+  Appear,
+  CodePane
 } from 'spectacle';
+import Slide02Titles from './Slide02Titles';
 
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
@@ -48,15 +51,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={['fade']} bgColor="secondary">
-          <Heading size={6} textColor="primary" caps>
-            What do we have?
-          </Heading>
-          <Heading size={2} textColor="tertiary">Angular</Heading>
-          <Heading size={2} textColor="tertiary">React</Heading>
-          <Heading size={2} textColor="tertiary">Vue</Heading>
-          <Text size={6} textColor="primary">
-            Standard text
-          </Text>
+          <Slide02Titles />
         </Slide>
 
         <Slide transition={['fade']} bgColor="secondary" textColor="primary">
@@ -68,6 +63,40 @@ export default class Presentation extends React.Component {
             <ListItem>Item 2</ListItem>
             <ListItem>Item 3</ListItem>
             <ListItem>Item 4</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="secondary">
+          <Heading size={6} textColor="primary" caps>
+            Example JSX
+          </Heading>
+          
+            <CodePane source={`
+<div className="App">
+  <header className="App-header">
+    <img src={logo} className="App-logo" alt="logo" />
+    <p>
+      Edit <code>src/App.js</code> and save to reload.
+    </p>
+    <a
+      className="App-link"
+      href="https://reactjs.org"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Learn React
+    </a>
+  </header>
+</div>`
+            } lang="jsx" theme="dark" />
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="secondary">
+          <Heading size={6} textColor="primary" caps>
+            React: Coming Up
+          </Heading>
+          <List>
+            <a href="https://reactjs.org/blog/2018/11/27/react-16-roadmap.html">Roadmap</a>
           </List>
         </Slide>
 

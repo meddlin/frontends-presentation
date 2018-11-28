@@ -13,9 +13,17 @@ import {
   Slide,
   Text,
   Appear,
-  CodePane
+  CodePane,
+  Layout,
+  Fill
 } from 'spectacle';
 import Slide02Titles from './Slide02Titles';
+import FurtherReading from './FurtherReading';
+import PerfComparison from './PerfComparison';
+import ProConAngular from './ProConAngular';
+import ProConReact from './ProConReact';
+import ProConVue from './ProConVue';
+import UniversalBenefits from './UniversalBenefits';
 
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
@@ -42,8 +50,8 @@ export default class Presentation extends React.Component {
       <Deck
         transition={['zoom', 'slide']}
         transitionDuration={500}
-        theme={theme}
-      >
+        theme={theme}>
+
         <Slide transition={['zoom']} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             JS Frontend Frameworks
@@ -54,16 +62,12 @@ export default class Presentation extends React.Component {
           <Slide02Titles />
         </Slide>
 
-        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+        <Slide transition={['fade']} bgColor="secondary">
           <Heading size={6} textColor="primary" caps>
-            Standard List
+            Example Angular Component
           </Heading>
-          <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
-          </List>
+          
+            <CodePane source={`angular`} lang="jsx" theme="dark" />
         </Slide>
 
         <Slide transition={['fade']} bgColor="secondary">
@@ -71,8 +75,7 @@ export default class Presentation extends React.Component {
             Example JSX
           </Heading>
           
-            <CodePane source={`
-<div className="App">
+            <CodePane source={`<div className="App">
   <header className="App-header">
     <img src={logo} className="App-logo" alt="logo" />
     <p>
@@ -87,31 +90,41 @@ export default class Presentation extends React.Component {
       Learn React
     </a>
   </header>
-</div>`
-            } lang="jsx" theme="dark" />
+</div>`} lang="jsx" theme="dark" />
         </Slide>
 
         <Slide transition={['fade']} bgColor="secondary">
           <Heading size={6} textColor="primary" caps>
-            React: Coming Up
+            Example Vue Component
           </Heading>
-          <List>
-            <a href="https://reactjs.org/blog/2018/11/27/react-16-roadmap.html">Roadmap</a>
-          </List>
+          
+            <CodePane source={`vue`} lang="jsx" theme="dark" />
         </Slide>
 
-        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
-          <Heading size={2} textColor="primary">References</Heading>
+        <Slide transition={['fade']} bgColor="secondary">
+          <ProConAngular />
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <ProConReact />
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <ProConVue />
+        </Slide>
 
-          <ListItem>Item 1</ListItem>
-          <ListItem>Item 2</ListItem>
-          <ListItem>Item 3</ListItem>
-          <ListItem>Item 4</ListItem>
+        <Slide transition={['fade']} bgColor="secondary">
+          <PerfComparison />
+        </Slide>
 
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
-          </BlockQuote>
+        <Slide transition={['fade']} bgColor="secondary">
+          <UniversalBenefits />
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="secondary">
+          <Layout>
+            <Fill>
+              <FurtherReading />
+            </Fill>
+          </Layout>
         </Slide>
 
       </Deck>

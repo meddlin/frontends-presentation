@@ -43,39 +43,24 @@ export default class Presentation extends React.Component {
       >
         <Slide transition={['zoom']} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
+            JS Frontend Frameworks
           </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-            open the presentation/index.js file to get started
-          </Text>
         </Slide>
 
-        <Slide transition={['fade']} bgColor="tertiary">
+        <Slide transition={['fade']} bgColor="secondary">
           <Heading size={6} textColor="primary" caps>
-            Typography
+            What do we have?
           </Heading>
-          <Heading size={1} textColor="secondary">
-            Heading 1
-          </Heading>
-          <Heading size={2} textColor="secondary">
-            Heading 2
-          </Heading>
-          <Heading size={3} textColor="secondary">
-            Heading 3
-          </Heading>
-          <Heading size={4} textColor="secondary">
-            Heading 4
-          </Heading>
-          <Heading size={5} textColor="secondary">
-            Heading 5
-          </Heading>
-          <Text size={6} textColor="secondary">
+          <Heading size={2} textColor="tertiary">Angular</Heading>
+          <Heading size={2} textColor="tertiary">React</Heading>
+          <Heading size={2} textColor="tertiary">Vue</Heading>
+          <Text size={6} textColor="primary">
             Standard text
           </Text>
         </Slide>
 
-        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>
+        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+          <Heading size={6} textColor="primary" caps>
             Standard List
           </Heading>
           <List>

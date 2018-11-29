@@ -25,6 +25,7 @@ import ProConAngular from './ProConAngular';
 import ProConReact from './ProConReact';
 import ProConVue from './ProConVue';
 import UniversalBenefits from './UniversalBenefits';
+import WorthTheTime from './WorthTheTime';
 
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
@@ -121,6 +122,10 @@ export default class Presentation extends React.Component {
 
         <Slide transition={['fade']} bgColor="secondary">
           <UniversalBenefits />
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="secondary">
+          <WorthTheTime />
         </Slide>
 
         <Slide transition={['fade']} bgColor="secondary">

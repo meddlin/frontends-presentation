@@ -10,7 +10,7 @@ import {
 const UniversalBenefits = () => {
 	return (
 		<div>
-			<Heading size={4} textColor="primary">Cool toys all around!</Heading>
+			<Heading size={4} textColor="primary">Common benefits from any of these frameworks/tools</Heading>
 			<div className="horizontalLists">
 		        <List>
 		        	<ListItem textColor="primary">Component-based front-end code</ListItem>

@@ -20,6 +20,7 @@ import {
 import Slide02Titles from './Slide02Titles';
 import FurtherReading from './FurtherReading';
 import PerfComparison from './PerfComparison';
+import PerfComparison2 from './PerfComparison2';
 import ProConAngular from './ProConAngular';
 import ProConReact from './ProConReact';
 import ProConVue from './ProConVue';
@@ -113,6 +114,9 @@ export default class Presentation extends React.Component {
 
         <Slide transition={['fade']} bgColor="secondary">
           <PerfComparison />
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <PerfComparison2 />
         </Slide>
 
         <Slide transition={['fade']} bgColor="secondary">

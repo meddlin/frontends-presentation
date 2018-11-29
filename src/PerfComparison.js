@@ -11,7 +11,7 @@ import styles from './PerfComparison.module.css';
 const PerfComparison = () => {
 	return (
 		<div>
-			<Heading size={4} textColor="primary">Erm...?</Heading>
+			<Heading size={4} textColor="primary">Uhmm...?</Heading>
 			<div>
 		        <List className="horizontalLists" style={{margin: '0 0 0 -180px'}}>
 		        	<ListItem>

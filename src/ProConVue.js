@@ -11,7 +11,7 @@ import styles from './ProConVue.module.css';
 const ProConVue = () => {
 	return (
 		<div>
-			<Heading size={4} textColor="primary">Pro / Con | Vue</Heading>
+			<Heading size={4} textColor="primary">Vue</Heading>
 			<div className="horizontalLists">
 		        <List>
 		        	<Text textSize={'36px'} textColor="tertiary">Pros</Text>

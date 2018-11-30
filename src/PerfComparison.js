@@ -21,7 +21,7 @@ const PerfComparison = () => {
 		        	</ListItem>
 
 		        	<ListItem>
-		        		<Text textSize={'36px'} textColor="tertiary">Load Time</Text>
+		        		<Text textSize={'36px'} textColor="tertiary">"Parse" Time</Text>
 		        		<img src={ require('./images/script-parse-time.png')} />
 		        	</ListItem>       	
 		        </List>

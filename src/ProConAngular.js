@@ -11,7 +11,7 @@ import styles from './ProConAngular.module.css';
 const ProConAngular = () => {
 	return (
 		<div>
-			<Heading size={4} textColor="primary">Pro / Con | Angular</Heading>
+			<Heading size={4} textColor="primary">Angular</Heading>
 			<div className="horizontalLists">
 		        <List>
 		        	<Text textSize={'36px'} textColor="tertiary">Pros</Text>
@@ -19,13 +19,8 @@ const ProConAngular = () => {
 		        		<Text textSize={'28px'} textColor="primary">Everything included <em>...even the kitchen sink!</em></Text>
 		        	</ListItem>
 		        	<ListItem>
-		        		<Text 
-		        			textSize={'28px'}
-		        		 	textColor="primary">TypeScript by default</Text>
+		        		<Text textSize={'28px'} textColor="primary">TypeScript by default</Text>
 		        	</ListItem>
-		        	<ListItem>
-		        			<Text textSize={'28px'} textColor="primary">Vue (v2)</Text>
-		        	</ListItem>	        	
 		        </List>
 
 		        <List>

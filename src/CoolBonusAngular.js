@@ -10,7 +10,7 @@ import {
 const CoolBonusVue = () => {
 	return (
 		<div>
-			<Heading size={4} textColor="primary">Honorable Mentions: Angular</Heading>
+			<Heading size={4} textColor="primary">Cool Stuff: Angular</Heading>
 			<div className="horizontalLists">
 		        <List>
 		        	<ListItem textColor="primary">Testing built-in from the start</ListItem>

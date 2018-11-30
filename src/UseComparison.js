@@ -6,20 +6,25 @@ import {
 	List,
 	ListItem
 } from 'spectacle';
+import './UseComparison.module.css';
 
 const UseComparison = () => {
 	return (
 		<div>
 			<Heading size={4} textColor="primary">Usage Compared</Heading>
 			
-			<img 
-				src={ require('./images/frontend-use-comparison.png')} 
-				style={{margin: '20px 0 20px 0'}} 
-			/>
+			<div class="centered">
+				<Link href={'https://2018.stateofjs.com/front-end-frameworks/overview/'}>
+				<img 
+					src={ require('./images/frontend-use-comparison_resize-1100px.png')} 
+					style={{margin: '20px 0 20px 0'}} 
+				/>
+				</Link>
 
-			<Link href={'https://2018.stateofjs.com/front-end-frameworks/overview/'}>
-				<Text textSize={'20px'} textColor="tertiary">Credit: State of JS, 2018 Survey</Text>
-			</Link>
+				<Link href={'https://2018.stateofjs.com/front-end-frameworks/overview/'}>
+					<Text textSize={'20px'} textColor="tertiary">Credit: State of JS, 2018 Survey</Text>
+				</Link>
+			</div>
 	    </div>
 	);
 };

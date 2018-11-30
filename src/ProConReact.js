@@ -11,22 +11,18 @@ import styles from './ProConReact.module.css';
 const ProConReact = () => {
 	return (
 		<div>
-			<Heading size={4} textColor="primary">Pro / Con | React</Heading>
+			<Heading size={4} textColor="primary">React</Heading>
 			<div className="horizontalLists">
 		        <List>
 		        	<Text textSize={'36px'} textColor="tertiary">Pros</Text>
 		        	<ListItem>
-		        		<Text 
-		        			textSize={'28px'}
-		        		 	textColor="primary">React (v16.x)</Text>
+		        		<Text textSize={'28px'} textColor="primary">React (v16.x)</Text>
 		        	</ListItem>
 		        	<ListItem>
-		        		<Text 
-		        			textSize={'28px'}
-		        		 	textColor="primary">Angular (v7)</Text>
+		        		<Text textSize={'28px'} textColor="primary">Angular (v7)</Text>
 		        	</ListItem>
 		        	<ListItem>
-		        			<Text textSize={'28px'} textColor="primary">Vue (v2)</Text>
+		        		<Text textSize={'28px'} textColor="primary">Vue (v2)</Text>
 		        	</ListItem>	        	
 		        </List>
 
@@ -34,16 +30,12 @@ const ProConReact = () => {
 		        	<Text textSize={'36px'} textColor="tertiary">Cons</Text>
 		        	<ListItem>
 		        		<Link href={'https://github.com/facebook/create-react-app'}>
-		        		<Text 
-		        			textSize={'28px'}
-		        		 	textColor="primary">create-react-app (v2.x)</Text>
+		        		<Text textSize={'28px'} textColor="primary">create-react-app (v2.x)</Text>
 		        		</Link>
 		        	</ListItem>
 		        	<ListItem>
 		        		<Link href={'https://cli.angular.io/'}>
-		        		<Text 
-		        			textSize={'28px'}
-		        		 	textColor="primary">angular-cli (v7.1.x)</Text>
+		        		<Text textSize={'28px'} textColor="primary">angular-cli (v7.1.x)</Text>
 		        		</Link>
 		        	</ListItem>
 		        	<ListItem>

@@ -23,16 +23,17 @@ import DemoComponentReact from './DemoComponentReact';
 import DemoComponentVue from './DemoComponentVue';
 import FurtherReading from './FurtherReading';
 import PerfComparison from './PerfComparison';
-import PerfComparison2 from './PerfComparison2';
 import UseComparison from './UseComparison';
 import ProConAngular from './ProConAngular';
 import ProConReact from './ProConReact';
 import ProConVue from './ProConVue';
 import CoolBonusAngular from './CoolBonusAngular';
-/*import CoolBonusReact from './CoolBonusReact';*/
+import CoolBonusReact from './CoolBonusReact';
 import CoolBonusVue from './CoolBonusVue';
 import UniversalBenefits from './UniversalBenefits';
 import WorthTheTime from './WorthTheTime';
+import ProblemExplanation from './ProblemExplanation';
+import SolutionExplanation from './SolutionExplanation';
 
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
@@ -61,26 +62,15 @@ export default class Presentation extends React.Component {
         transitionDuration={500}
         theme={theme}>
 
+      {/* Title */}
         <Slide transition={['zoom']} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            JS Frontend Frameworks
-          </Heading>
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">JS Frontend Frameworks</Heading>
         </Slide>
-
         <Slide transition={['fade']} bgColor="secondary">
           <Slide02Titles />
         </Slide>
 
-        <Slide transition={['fade']} bgColor="secondary">
-          <ProConAngular />
-        </Slide>
-        <Slide transition={['fade']} bgColor="secondary">
-          <ProConReact />
-        </Slide>
-        <Slide transition={['fade']} bgColor="secondary">
-          <ProConVue />
-        </Slide>
-
+      {/* Preview */}
         <Slide transition={['fade']} bgColor="secondary">
           <DemoComponentAngular />
         </Slide>
@@ -91,26 +81,47 @@ export default class Presentation extends React.Component {
           <DemoComponentVue />
         </Slide>
 
+      {/* Pro/Con */}
         <Slide transition={['fade']} bgColor="secondary">
-          <CoolBonusAngular />
+          <ProConAngular />
         </Slide>
-        {/*<Slide transition={['fade']} bgColor="secondary">
-          <DemoComponentReact />
-        </Slide>*/}
         <Slide transition={['fade']} bgColor="secondary">
-          <CoolBonusVue />
+          <ProConReact />
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <ProConVue />
         </Slide>
 
+      {/* Performance Comparison */}
         <Slide transition={['fade']} bgColor="secondary">
           <PerfComparison />
-        </Slide>
-        <Slide transition={['fade']} bgColor="secondary">
-          <PerfComparison2 />
         </Slide>
         <Slide transition={['fade']} bgColor="secondary">
           <UseComparison />
         </Slide>
 
+      {/* Problem */}
+        <Slide transition={['fade']} bgColor="secondary">
+          <ProblemExplanation />
+        </Slide>
+
+      {/* Solution */}
+        <Slide transition={['fade']} bgColor="secondary">
+          <SolutionExplanation />
+        </Slide>
+
+      {/* Cool Stuff */}
+        <Slide transition={['fade']} bgColor="secondary">
+          <CoolBonusAngular />
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <CoolBonusReact />
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <CoolBonusVue />
+        </Slide>
+
+      {/* Closing */}
         <Slide transition={['fade']} bgColor="secondary">
           <UniversalBenefits />
         </Slide>
@@ -118,7 +129,6 @@ export default class Presentation extends React.Component {
         <Slide transition={['fade']} bgColor="secondary">
           <WorthTheTime />
         </Slide>
-
         <Slide transition={['fade']} bgColor="secondary">
           <Layout>
             <Fill>

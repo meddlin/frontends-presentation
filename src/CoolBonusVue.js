@@ -10,7 +10,7 @@ import {
 const CoolBonusVue = () => {
 	return (
 		<div>
-			<Heading size={4} textColor="primary">Honorable Mentions: Vue</Heading>
+			<Heading size={4} textColor="primary">Cool Stuff: Vue</Heading>
 			<div className="horizontalLists">
 		        <List>
 		        	<ListItem textColor="primary">vue-cli 3 => configuration w/o "ejecting"</ListItem>

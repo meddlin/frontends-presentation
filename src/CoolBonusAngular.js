@@ -4,26 +4,69 @@ import {
 	Link,
 	Text,
 	List,
-	ListItem
+	ListItem,
+	CodePane
 } from 'spectacle';
 
 const CoolBonusVue = () => {
 	return (
 		<div>
-			<Heading size={4} textColor="primary">Cool Stuff: Angular</Heading>
+			<Heading size={4} textColor="primary">Cool Stuff</Heading>
 			<div className="horizontalLists">
-		        <List>
-		        	<ListItem textColor="primary">Testing built-in from the start</ListItem>
-		        	<ListItem textColor="primary">Integrated Angular Material</ListItem>
-		        	{/*https://blog.angular.io/version-7-of-angular-cli-prompts-virtual-scroll-drag-and-drop-and-more-c594e22e7b8c*/}
-		        	
-		        	<ListItem textColor="primary">**No 'eject' => ngx-build-plus allows editing config</ListItem>
-		        	{/*https://blog.ninja-squad.com/2018/10/19/angular-cli-7.0/*/}
-		        	{/*https://github.com/manfredsteyer/ngx-build-plus*/}
+				<div>
+			        <Text textSize={'36px'} textColor="tertiary">.NET Core Starters</Text>
+			        <List>
+						<ListItem>
+							<Link href="https://github.com/MarkPieszak/aspnetcore-angular2-universal">
+								<Text textSize={'30px'} textColor="primary">Angular + .NET Core</Text>
+							</Link>
+						</ListItem>
+						<ListItem>
+							<Link href="https://github.com/MarkPieszak/aspnetcore-Vue-starter">
+								<Text textSize={'30px'} textColor="primary">Vue Starter + .NET Core</Text>
+							</Link>
+						</ListItem>
+						<ListItem>
+							<Link href="https://docs.microsoft.com/en-us/aspnet/core/client-side/spa/react?view=aspnetcore-2.1&tabs=visual-studio">
+								<CodePane source={`dotnet new react`} textSize={'30px'} />
+							</Link>
+						</ListItem>
+			        </List>
+		        </div>
 
-		        	<ListItem textColor="primary">CLI prompts</ListItem>
-		        	{/*https://medium.com/@urish/cli-prompts-my-favorite-feature-in-angular-7-a41bc5c9e806*/}
-		        </List>
+		        <div>
+			        <Text textSize={'36px'} textColor="tertiary">More Possibilities</Text>
+			        <List>
+						<ListItem>			        
+							<Link href="https://nextjs.org/">
+								<Text textSize={'30px'} textColor="primary">Next.js -- Static & SSR</Text>
+							</Link>
+						</ListItem>
+						<ListItem>						
+							<Link href="https://scotch.io/tutorials/creating-vue-apps-with-the-vue-ui-tool">
+								<Text textSize={'30px'} textColor="primary">vue-cli 3 GUI -- Manage projects w/ built-in GUI</Text>
+							</Link>
+						</ListItem>
+						<ListItem>						
+							<Link href="https://material.angular.io/">
+								<Text textSize={'30px'} textColor="primary">Angular Material -- Modern, re-usable components</Text>
+							</Link>
+						</ListItem>
+						<ListItem>
+							<Text textSize={'30px'} textColor="primary">VS Code Extensions => 
+								<Link 
+									href="https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials" 
+									textColor="primary"> Angular</Link> | 
+								<Link 
+									href="https://marketplace.visualstudio.com/items?itemName=jawandarajbir.react-vscode-extension-pack"
+									textColor="primary"> React</Link> | 
+								<Link
+									href="https://marketplace.visualstudio.com/items?itemName=mubaidr.vuejs-extension-pack"
+									textColor="primary"> Vue</Link>
+							</Text>							
+						</ListItem>
+			        </List>
+		        </div>
 		    </div>
 	    </div>
 	);

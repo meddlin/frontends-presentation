@@ -15,7 +15,9 @@ const SolutionExplanation = () => {
 
 			<div className="horizontalLists" >
 				<div >
-					<Text textSize={'36px'} textColor="tertiary">create-react-app</Text>
+					<Link href={'https://github.com/facebook/create-react-app'}>
+						<Text textSize={'36px'} textColor="tertiary">create-react-app</Text>
+					</Link>
 					<List>
 						<ListItem textSize={'32px'} textColor="primary">npm</ListItem>
 						<ListItem textSize={'32px'} textColor="primary">JSX, ES6, (TypeScript)</ListItem>
@@ -28,7 +30,9 @@ const SolutionExplanation = () => {
 				</div>
 
 				<div>
-					<Text textSize={'36px'} textColor="tertiary">angular-cli</Text>
+					<Link href={'https://cli.angular.io/'}>
+						<Text textSize={'36px'} textColor="tertiary">angular-cli</Text>
+					</Link>
 					<List>
 						<ListItem textSize={'32px'} textColor="primary">npm</ListItem>
 						<ListItem textSize={'32px'} textColor="primary">TypeScript + ES6/7</ListItem>
@@ -41,8 +45,10 @@ const SolutionExplanation = () => {
 					</List>
 				</div>
 
-				<div >
-					<Text textSize={'36px'} textColor="tertiary">vue-cli</Text>
+				<div>
+					<Link href={'https://cli.vuejs.org/'}>
+						<Text textSize={'36px'} textColor="tertiary">vue-cli</Text>
+					</Link>
 					<List>
 						<ListItem textSize={'32px'} textColor="primary">npm</ListItem>
 						<ListItem textSize={'32px'} textColor="primary">TypeScript + ES6/7</ListItem>

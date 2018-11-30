@@ -116,12 +116,12 @@ export default class Presentation extends React.Component {
         <Slide transition={['fade']} bgColor="secondary">
           <CoolBonusAngular />
         </Slide>
-        <Slide transition={['fade']} bgColor="secondary">
+        {/*<Slide transition={['fade']} bgColor="secondary">
           <CoolBonusReact />
         </Slide>
         <Slide transition={['fade']} bgColor="secondary">
           <CoolBonusVue />
-        </Slide>
+        </Slide>*/}
 
       {/* Closing */}
         <Slide transition={['fade']} bgColor="secondary">

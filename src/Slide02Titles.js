@@ -7,7 +7,7 @@ const Slide02Titles = () => {
 		<div className="horizontalWrapper">
 	        <div>
 		        <Heading size={2} textColor="primary">Angular</Heading>
-		        <img src={ require('./images/angular-380px-transp.png')}  />
+		        <img src={ require('./images/angular-380px-transp.png')} style={{margin: '22px 0 0 0'}} />
 		        <Text size={1} textColor="primary">angular-cli</Text>
 	        </div>
 

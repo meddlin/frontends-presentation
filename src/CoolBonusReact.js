@@ -11,8 +11,7 @@ const CoolBonusReact = () => {
 	return (
 		<div>
 			<Heading size={4} textColor="primary">Cool Stuff: React</Heading>
-			<div className="horizontalLists">
-
+			{/*<div className="horizontalLists"></div>*/}
 				<Text textSize={'36px'} textColor="tertiary">Multiple "buildchains"</Text>
 		        <List>
 		        	<ListItem textColor="primary">Next.js</ListItem>
@@ -25,7 +24,7 @@ const CoolBonusReact = () => {
 		        	<ListItem textColor="primary">nwb - Toolkit for making React npm modules</ListItem>
 		        	{/*https://github.com/insin/nwb*/}
 		        </List>
-		    </div>
+		    
 	    </div>
 	);
 };

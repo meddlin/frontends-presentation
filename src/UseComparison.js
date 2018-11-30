@@ -12,8 +12,7 @@ const UseComparison = () => {
 	return (
 		<div>
 			<Heading size={4} textColor="primary">Usage Compared</Heading>
-			
-			<div class="centered">
+			<div className="centered">
 				<Link href={'https://2018.stateofjs.com/front-end-frameworks/overview/'}>
 				<img 
 					src={ require('./images/frontend-use-comparison_resize-1100px.png')} 

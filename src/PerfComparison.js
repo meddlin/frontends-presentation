@@ -13,7 +13,7 @@ const PerfComparison = () => {
 		<div>
 			<Heading size={4} textColor="primary">Uhmm...?</Heading>
 			<div>
-		        <List className="horizontalLists" style={{margin: '0 0 0 -180px'}}>
+		        <List className="horizontalLists">
 		        	<ListItem>
 		        		<Text textSize={'36px'} textColor="tertiary">Bundle Size</Text>
 		        		<img src={ require('./images/bundle-sizes.png')} 
@@ -28,7 +28,7 @@ const PerfComparison = () => {
 		    </div>
 
 		    <Text textSize={'24px'} textColor="primary">
-		    	NOTE: On-screen performance appears to be highly subjective as it depends on what is rendered, how many nodes need updating.
+		    	NOTE: "Load time" would be a function of download size + "parsing" + render time.
 		    </Text>
 
 		    <br />

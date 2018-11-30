@@ -19,23 +19,29 @@ const ProConVue = () => {
 		        		<Text textSize={'28px'} textColor="primary">Well-written documentation</Text>
 		        	</ListItem>
 		        	<ListItem>
-		        		<Text textSize={'28px'} textColor="primary">Angular (v7)</Text>
+		        		<Text textSize={'28px'} textColor="primary">Fast, easy learning curve</Text>
 		        	</ListItem>
 		        	<ListItem>
-		        		<Text textSize={'28px'} textColor="primary">Vue (v2)</Text>
-		        	</ListItem>	        	
+		        		<Text textSize={'28px'} textColor="primary">1st-party packages for routing, state management</Text>
+		        	</ListItem>
+		        	<ListItem>
+		        		<Text textSize={'28px'} textColor="primary">DSL is happy medium between React, Angular's</Text>
+		        	</ListItem>
+		        	<ListItem>
+		        		<Text textSize={'28px'} textColor="primary">Use as little or much as you want</Text>
+		        	</ListItem>
 		        </List>
 
 		        <List>
 		        	<Text textSize={'36px'} textColor="tertiary">Cons</Text>
 		        	<ListItem>
-		        		<Text textSize={'28px'} textColor="primary">Smaller community support</Text>
+		        		<Text textSize={'28px'} textColor="primary">Community + Resources: it's not React</Text>
 		        	</ListItem>
 		        	<ListItem>
-		        		<Text textSize={'28px'} textColor="primary">angular-cli (v7.1.x)</Text>
+		        		<Text textSize={'28px'} textColor="primary">Questionable support: it's not React (again)</Text>
 		        	</ListItem>
 		        	<ListItem>
-		        		<Text textSize={'28px'} textColor="primary">vue-cli (v3)</Text>
+		        		<Text textSize={'28px'} textColor="primary">DSL can be questionable</Text>
 		        	</ListItem>	        	
 		        </List>
 		    </div>

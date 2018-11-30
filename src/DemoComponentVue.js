@@ -14,7 +14,8 @@ const ProConVue = () => {
 		<div>
 			<Heading size={6} textColor="primary" caps>Preview: Vue</Heading>
       <List className="horizontalLists">
-        <ListItem style={{margin: '0 30px 0 0'}}>
+        <ListItem>
+          <Text textSize={'24px'} textColor="tertiary">Component.vue</Text>
           <CodePane source={`<template>
   <div class="hello">
     <h1>{{ msg }}</h1>
@@ -45,17 +46,26 @@ export default {
 h3 {
   margin: 40px 0 0;
 }
-</style>`} lang="html" theme="dark" />
+</style>`} lang="html" theme="dark" textSize={'17px'} />
             </ListItem>
-            <ListItem style={{width: '10em'}}>
-              <List>
-                <Text textSize={'24px'} textColor="primary">Progressive framework</Text>
-                  <Text textSize={'24px'} textColor="primary">- highly-flexible components</Text>
-                  <Text textSize={'24px'} textColor="primary">- one-way OR two-way data flow</Text>
-                  <Text textSize={'24px'} textColor="primary">- Vue Router</Text>
-                  <Text textSize={'24px'} textColor="primary">- Vuex</Text>
-              </List>
-            </ListItem>
+            <div>
+              <ListItem>
+                <List>
+                    <Text textSize={'24px'} textColor="primary">Progressive framework</Text>
+                    <Text textSize={'24px'} textColor="primary">- single- or multi-file components</Text>
+                    <Text textSize={'24px'} textColor="primary">- one-way OR two-way data flow</Text>
+                    <Text textSize={'24px'} textColor="primary">- "close" to HTML</Text>
+                  </List>
+                </ListItem>
+                <ListItem>
+                  <List>
+                    <Text textSize={'24px'} textColor="primary">Pieces included, but opt-in</Text>
+                    <Text textSize={'24px'} textColor="primary">- Vue-Router</Text>
+                    <Text textSize={'24px'} textColor="primary">- Vuex</Text>
+                    <Text textSize={'24px'} textColor="primary">- vue-server-renderer</Text>
+                </List>
+              </ListItem>
+            </div>
         </List>
 	    </div>
 	);

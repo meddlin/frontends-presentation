@@ -13,9 +13,10 @@ const ProConReact = () => {
 	return (
 		<div>
 			<Heading size={6} textColor="primary" caps>Preview: React</Heading>
-			<List className="horizontalLists" style={{margin: '0 0 0 -180px'}}>
+			<List className="horizontalLists">
             	<ListItem>
-            	<CodePane source={`import React, { Component } from 'react';
+            		<Text textSize={'24px'} textColor="tertiary">App.js</Text>
+            		<CodePane source={`import React, { Component } from 'react';
 
 import './App.css';
 
@@ -39,17 +40,34 @@ class App extends Component {
   }
 }
 
-export default App;`} lang="jsx" theme="dark" />
+export default App;`} lang="jsx" theme="dark" textSize={'17px'} />
 	    		</ListItem>
-				<ListItem style={{width: '10em'}}>
-		    		<List>
-		    			<Text textSize={'24px'} textColor="primary">"It's only the view!"</Text>
-		        		<Text textSize={'24px'} textColor="primary">- JSX is...JS-based components</Text>
-		        		<Text textSize={'24px'} textColor="primary">- one-way data flow</Text>
-		        		<Text textSize={'24px'} textColor="primary">- React Router</Text>
-		        		<Text textSize={'24px'} textColor="primary">- Redux</Text>
-		    		</List>
-		    	</ListItem>
+
+	    		<div>
+					<ListItem>
+			    		<List>
+			    			<Text textSize={'24px'} textColor="primary">"It's only the view!"</Text>
+			        		<Text textSize={'24px'} textColor="primary">- JSX is...JS-based components</Text>
+			        		<Text textSize={'24px'} textColor="primary">- one-way data flow</Text>
+			        	</List>
+			    	</ListItem>
+
+			    	<ListItem>
+			    		<List>
+			    			<Text textSize={'24px'} textColor="primary">3rd-party packages for missing pieces</Text>
+			        		<Text textSize={'24px'} textColor="primary">- React Router</Text>
+			        		<Text textSize={'24px'} textColor="primary">- Redux</Text>
+			    		</List>
+			    	</ListItem>
+
+			    	<ListItem>
+			    		<List>
+			    			<Text textSize={'24px'} textColor="primary">A Component</Text>
+			    			<Text textSize={'24px'} textColor="primary">-> single .js file</Text>
+			    		</List>
+			    	</ListItem>
+		    	</div>
+		    		
 	    	</List>
 	    </div>
 	);

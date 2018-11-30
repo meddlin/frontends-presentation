@@ -13,26 +13,21 @@ const ProConAngular = () => {
 	return (
 		<div>
 			<Heading size={6} textColor="primary" caps>Preview: Angular</Heading>
-			<List className="horizontalLists" style={{margin: '0 0 0 -180px'}}>
+			<List className="horizontalLists" >
+				<div>
 		        	<ListItem>
 		        		<Text textSize={'24px'} textColor="tertiary">heroes.component.html</Text>
 		        		<CodePane source={`<h2>My Heroes</h2>
-<ul class="heroes">
-  <li *ngFor="let hero of heroes"
-      (click)="onSelect(hero)"
-      [class.selected]="hero === selectedHero">
-    <span class="badge">{{hero.id}}</span> {{hero.name}}
-  </li>
-</ul>
+	<ul class="heroes">
+	  <li *ngFor="let hero of heroes">
+	    <span class="badge">{{hero.id}}</span> {{hero.name}}
+	  </li>
+	</ul>
 
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>`} lang="html" theme="dark" />
-		        	</ListItem>
-
-		        	<ListItem style={{margin: '0 30px 0 30px'}}>
+	<app-hero-detail [hero]="selectedHero"></app-hero-detail>`} lang="html" theme="dark" textSize={'17px'} />
+		        		<br />
 		        		<Text textSize={'24px'} textColor="tertiary">heroes.component.ts</Text>
 		        		<CodePane source={`import { Component, OnInit } from '@angular/core';
-import { Hero } from '../hero';
-import { HeroService } from '../hero.service';
 
 @Component({
   selector: 'app-heroes',
@@ -40,14 +35,6 @@ import { HeroService } from '../hero.service';
   styleUrls: ['./heroes.component.scss']
 })
 export class HeroesComponent implements OnInit {
-  heroes: Hero[];
-
-  selectedHero: Hero;
-  hero: Hero = {
-    id: 1,
-    name: 'Windstorm'
-  };
-
   constructor(private heroService: HeroService) { }
 
   ngOnInit() {
@@ -57,21 +44,35 @@ export class HeroesComponent implements OnInit {
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
   }
+}`} lang="ts" theme="dark" textSize={'17px'} />
+		        	</ListItem>
+		        </div>
 
-}`} lang="ts" theme="dark" />
+	        	<div>
+		        	<ListItem >
+		        		<List>
+		        			<Text textSize={'24px'} textColor="primary">A framework's framework</Text>
+			        		<Text textSize={'24px'} textColor="primary">- Templating...</Text>
+			        		<Text textSize={'24px'} textColor="primary">- Routing...</Text>
+			        		<Text textSize={'24px'} textColor="primary">- Data-flow...</Text>
+			        		<Text textSize={'24px'} textColor="primary">- SSR...</Text>
+			        		<Text textSize={'24px'} textColor="primary">- Configurations...</Text>
+			        		<Text textSize={'24px'} textColor="primary">It's all here</Text>
+		        		</List>
 		        	</ListItem>
 
-		        	<ListItem style={{width: '10em'}}>
+		        	<ListItem >
 		        		<List>
-		        			<Text textSize={'24px'} textColor="primary">All Inclusive</Text>
+		        			<Text textSize={'24px'} textColor="primary">A "Component"</Text>
 			        		<Text textSize={'24px'} textColor="primary">- heroes.component.html</Text>
 			        		<Text textSize={'24px'} textColor="primary">- heroes.component.ts</Text>
 			        		<Text textSize={'24px'} textColor="primary">- heroes.component.scss</Text>
-			        		<Text textSize={'24px'} textColor="primary">- data model (./hero.ts)</Text>
-			        		<Text textSize={'24px'} textColor="primary">- services (./hero.service.ts)</Text>
+			        		<Text textSize={'24px'} textColor="primary">+ data model (./hero.ts)</Text>
+			        		<Text textSize={'24px'} textColor="primary">+ services (./hero.service.ts)</Text>
 		        		</List>
 		        	</ListItem>
-		        </List>
+	        	</div>
+	        </List>
 	    </div>
 	);
 };

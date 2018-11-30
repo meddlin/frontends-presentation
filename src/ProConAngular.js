@@ -21,6 +21,9 @@ const ProConAngular = () => {
 		        	<ListItem>
 		        		<Text textSize={'28px'} textColor="primary">TypeScript by default</Text>
 		        	</ListItem>
+		        	<ListItem>
+		        		<Text textSize={'28px'} textColor="primary">MVVM pattern out-of-the-box</Text>
+		        	</ListItem>
 		        </List>
 
 		        <List>
@@ -33,7 +36,10 @@ const ProConAngular = () => {
 		        	</ListItem>
 		        	<ListItem>
 		        		<Text textSize={'28px'} textColor="primary">Waning popularity</Text>
-		        	</ListItem>	        	
+		        	</ListItem>
+		        	<ListItem>
+		        		<Text textSize={'28px'} textColor="primary">Highest learning curve</Text>
+		        	</ListItem>
 		        </List>
 		    </div>
 	    </div>

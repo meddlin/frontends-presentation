@@ -58,9 +58,11 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Deck
+        contentWidth={1500}
         transition={['zoom', 'slide']}
         transitionDuration={500}
-        theme={theme}>
+        theme={theme}
+        progress="bar">
 
       {/* Title */}
         <Slide transition={['zoom']} bgColor="primary">
@@ -71,13 +73,13 @@ export default class Presentation extends React.Component {
         </Slide>
 
       {/* Preview */}
-        <Slide transition={['fade']} bgColor="secondary">
+        <Slide transition={['fade']} bgColor="secondary" align="flex-start" >
           <DemoComponentAngular />
         </Slide>
-        <Slide transition={['fade']} bgColor="secondary">
+        <Slide transition={['fade']} bgColor="secondary" align="flex-start">
           <DemoComponentReact />
         </Slide>
-        <Slide transition={['fade']} bgColor="secondary">
+        <Slide transition={['fade']} bgColor="secondary" align="flex-start">
           <DemoComponentVue />
         </Slide>
 

@@ -8,7 +8,7 @@ import {
 	CodePane
 } from 'spectacle';
 
-const CoolBonusVue = () => {
+const CoolStuff = () => {
 	return (
 		<div>
 			<Heading size={4} textColor="primary">Cool Stuff</Heading>
@@ -72,4 +72,4 @@ const CoolBonusVue = () => {
 	);
 };
 
-export default CoolBonusVue;
+export default CoolStuff;

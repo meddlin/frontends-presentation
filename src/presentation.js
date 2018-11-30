@@ -27,9 +27,7 @@ import UseComparison from './UseComparison';
 import ProConAngular from './ProConAngular';
 import ProConReact from './ProConReact';
 import ProConVue from './ProConVue';
-import CoolBonusAngular from './CoolBonusAngular';
-import CoolBonusReact from './CoolBonusReact';
-import CoolBonusVue from './CoolBonusVue';
+import CoolStuff from './CoolStuff';
 import UniversalBenefits from './UniversalBenefits';
 import WorthTheTime from './WorthTheTime';
 import ProblemExplanation from './ProblemExplanation';
@@ -114,14 +112,8 @@ export default class Presentation extends React.Component {
 
       {/* Cool Stuff */}
         <Slide transition={['fade']} bgColor="secondary">
-          <CoolBonusAngular />
+          <CoolStuff />
         </Slide>
-        {/*<Slide transition={['fade']} bgColor="secondary">
-          <CoolBonusReact />
-        </Slide>
-        <Slide transition={['fade']} bgColor="secondary">
-          <CoolBonusVue />
-        </Slide>*/}
 
       {/* Closing */}
         <Slide transition={['fade']} bgColor="secondary">

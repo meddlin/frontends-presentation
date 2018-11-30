@@ -24,7 +24,7 @@ const ProConAngular = () => {
 	  </li>
 	</ul>
 
-	<app-hero-detail [hero]="selectedHero"></app-hero-detail>`} lang="html" theme="dark" textSize={'17px'} />
+	<app-hero-detail [hero]="selectedHero"></app-hero-detail>`} lang="html" theme="light" textSize={'17px'} />
 		        		<br />
 		        		<Text textSize={'24px'} textColor="tertiary">heroes.component.ts</Text>
 		        		<CodePane source={`import { Component, OnInit } from '@angular/core';
@@ -44,7 +44,7 @@ export class HeroesComponent implements OnInit {
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
   }
-}`} lang="ts" theme="dark" textSize={'17px'} />
+}`} lang="ts" theme="light" textSize={'17px'} />
 		        	</ListItem>
 		        </div>
 

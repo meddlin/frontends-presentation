@@ -28,7 +28,7 @@ const CoolBonusVue = () => {
 						</ListItem>
 						<ListItem>
 							<Link href="https://docs.microsoft.com/en-us/aspnet/core/client-side/spa/react?view=aspnetcore-2.1&tabs=visual-studio">
-								<CodePane source={`dotnet new react`} textSize={'30px'} />
+								<CodePane source={`dotnet new react`} theme="light" textSize={'30px'} />
 							</Link>
 						</ListItem>
 			        </List>

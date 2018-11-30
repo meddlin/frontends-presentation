@@ -40,7 +40,7 @@ class App extends Component {
   }
 }
 
-export default App;`} lang="jsx" theme="dark" textSize={'17px'} />
+export default App;`} lang="jsx" theme="light" textSize={'17px'} />
 	    		</ListItem>
 
 	    		<div>

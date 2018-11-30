@@ -18,12 +18,19 @@ import {
   Fill
 } from 'spectacle';
 import Slide02Titles from './Slide02Titles';
+import DemoComponentAngular from './DemoComponentAngular';
+import DemoComponentReact from './DemoComponentReact';
+import DemoComponentVue from './DemoComponentVue';
 import FurtherReading from './FurtherReading';
 import PerfComparison from './PerfComparison';
 import PerfComparison2 from './PerfComparison2';
+import UseComparison from './UseComparison';
 import ProConAngular from './ProConAngular';
 import ProConReact from './ProConReact';
 import ProConVue from './ProConVue';
+import CoolBonusAngular from './CoolBonusAngular';
+/*import CoolBonusReact from './CoolBonusReact';*/
+import CoolBonusVue from './CoolBonusVue';
 import UniversalBenefits from './UniversalBenefits';
 import WorthTheTime from './WorthTheTime';
 
@@ -65,45 +72,6 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={['fade']} bgColor="secondary">
-          <Heading size={6} textColor="primary" caps>
-            Example Angular Component
-          </Heading>
-          
-            <CodePane source={`angular`} lang="jsx" theme="dark" />
-        </Slide>
-
-        <Slide transition={['fade']} bgColor="secondary">
-          <Heading size={6} textColor="primary" caps>
-            Example JSX
-          </Heading>
-          
-            <CodePane source={`<div className="App">
-  <header className="App-header">
-    <img src={logo} className="App-logo" alt="logo" />
-    <p>
-      Edit <code>src/App.js</code> and save to reload.
-    </p>
-    <a
-      className="App-link"
-      href="https://reactjs.org"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Learn React
-    </a>
-  </header>
-</div>`} lang="jsx" theme="dark" />
-        </Slide>
-
-        <Slide transition={['fade']} bgColor="secondary">
-          <Heading size={6} textColor="primary" caps>
-            Example Vue Component
-          </Heading>
-          
-            <CodePane source={`vue`} lang="jsx" theme="dark" />
-        </Slide>
-
-        <Slide transition={['fade']} bgColor="secondary">
           <ProConAngular />
         </Slide>
         <Slide transition={['fade']} bgColor="secondary">
@@ -114,10 +82,33 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={['fade']} bgColor="secondary">
+          <DemoComponentAngular />
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <DemoComponentReact />
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <DemoComponentVue />
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="secondary">
+          <CoolBonusAngular />
+        </Slide>
+        {/*<Slide transition={['fade']} bgColor="secondary">
+          <DemoComponentReact />
+        </Slide>*/}
+        <Slide transition={['fade']} bgColor="secondary">
+          <CoolBonusVue />
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="secondary">
           <PerfComparison />
         </Slide>
         <Slide transition={['fade']} bgColor="secondary">
           <PerfComparison2 />
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary">
+          <UseComparison />
         </Slide>
 
         <Slide transition={['fade']} bgColor="secondary">

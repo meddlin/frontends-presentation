@@ -16,14 +16,12 @@ const ProConAngular = () => {
 		        <List>
 		        	<Text textSize={'36px'} textColor="tertiary">Pros</Text>
 		        	<ListItem>
-		        		<Text 
-		        			textSize={'28px'}
-		        		 	textColor="primary">React (v16.x)</Text>
+		        		<Text textSize={'28px'} textColor="primary">Everything included <em>...even the kitchen sink!</em></Text>
 		        	</ListItem>
 		        	<ListItem>
 		        		<Text 
 		        			textSize={'28px'}
-		        		 	textColor="primary">Angular (v7)</Text>
+		        		 	textColor="primary">TypeScript by default</Text>
 		        	</ListItem>
 		        	<ListItem>
 		        			<Text textSize={'28px'} textColor="primary">Vue (v2)</Text>
@@ -33,23 +31,13 @@ const ProConAngular = () => {
 		        <List>
 		        	<Text textSize={'36px'} textColor="tertiary">Cons</Text>
 		        	<ListItem>
-		        		<Link href={'https://github.com/facebook/create-react-app'}>
-		        		<Text 
-		        			textSize={'28px'}
-		        		 	textColor="primary">create-react-app (v2.x)</Text>
-		        		</Link>
+		        		<Text textSize={'28px'} textColor="primary">Feels bloated</Text>
 		        	</ListItem>
 		        	<ListItem>
-		        		<Link href={'https://cli.angular.io/'}>
-		        		<Text 
-		        			textSize={'28px'}
-		        		 	textColor="primary">angular-cli (v7.1.x)</Text>
-		        		</Link>
+		        		<Text textSize={'28px'} textColor="primary">Opinionated project organization</Text>
 		        	</ListItem>
 		        	<ListItem>
-		        		<Link href={'https://cli.vuejs.org/'}>
-		        			<Text textSize={'28px'} textColor="primary">vue-cli (v3)</Text>
-		        		</Link>
+		        		<Text textSize={'28px'} textColor="primary">Waning popularity</Text>
 		        	</ListItem>	        	
 		        </List>
 		    </div>

@@ -17,6 +17,7 @@ const UniversalBenefits = () => {
 		        	<ListItem textColor="primary">ES6/7 and/or TypeScript</ListItem>
 		        	<ListItem textColor="primary">Front-end unit testing</ListItem>
 		        	<ListItem textColor="primary">Advanced dev-time tooling via CLI</ListItem>
+		        	<ListItem textColor="primary">Modular CSS capabilities</ListItem>
 		        	<ListItem textColor="primary">Lazy-loading</ListItem>
 		        	<ListItem textColor="primary">SEO-capable</ListItem>
 		        	<ListItem textColor="primary">Server-side Rendering</ListItem>
